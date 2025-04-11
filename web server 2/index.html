@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delicious Dishes Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+        }
+        .name {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            background: url('https://images.unsplash.com/photo-1584430542857-92a7a0f85a56?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDJ8fHxyZXN0YXVyYW50fGVufDB8fHx8fDE2ODAzNzgwMzg&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 40px;
+        }
+        .menu-section, .recipe-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .menu-item, .recipe-item {
+            display: inline-block;
+            width: 280px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .menu-item img, .recipe-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .item-title {
+            font-size: 24px;
+            margin: 15px 0;
+        }
+        .item-description {
+            padding: 0 15px;
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Delicious Dishes Restaurant</h1>
+    <p class="name">Created by Mohamed Ashraf</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#recipes">Recipes</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="banner">
+    <h2>Welcome to the Best Culinary Experience</h2>
+</div>
+
+<section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1582612195306-fba8b870cd66?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDI2fHxzcGFndGV0dGl8ZW58MHx8fHwxNjgwMzYwMjc0&ixlib=rb-1.2.1&q=80&w=1080" alt="Spaghetti Carbonara">
+        <h3 class="item-title">Spaghetti Carbonara</h3>
+        <p class="item-description">A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+    </div>
+    <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1587301534585-53b4e4b1ef43?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDI1fHxncmlsbGVkJTIwc2FsYW1vbnh8ZW58MHx8fHwxNjgwMzYwMzgz&ixlib=rb-1.2.1&q=80&w=1080" alt="Grilled Salmon">
+        <h3 class="item-title">Grilled Salmon</h3>
+        <p class="item-description">Freshly grilled salmon served with a side of steamed vegetables.</p>
+    </div>
+    <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1592415954332-22f007b8fae7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDg3fHxjYWVzc2VyJTIwc2FsYWR8ZW58MHx8fHwxNjgwMzYwNDQw&ixlib=rb-1.2.1&q=80&w=1080" alt="Caesar Salad">
+        <h3 class="item-title">Caesar Salad</h3>
+        <p class="item-description">Crispy lettuce with creamy Caesar dressing and crunchy croutons.</p>
+    </div>
+</section>
+
+<section id="recipes" class="recipe-section">
+    <h2>Our Favorite Recipes</h2>
+    <div class="recipe-item">
+        <img src="https://images.unsplash.com/photo-1550749224-42639fc8cf62?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDExMnx8dmVnYW4gdGFjb3N8ZW58MHx8fHwxNjgwMzYwNjE5&ixlib=rb-1.2.1&q=80&w=1080" alt="Vegan Tacos">
+        <h3 class="item-title">Vegan Tacos</h3>
+        <p class="item-description">A healthy and tasty alternative with seasoned veggies and homemade salsa.</p>
+    </div>
+    <div class="recipe-item">
+        <img src="https://images.unsplash.com/photo-1603052877976-fc07f3d90d56?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDIyfHxob21lbWFkZSBwaXphfGVufDB8fHx8fDE2ODAzNjA2MzM&ixlib=rb-1.2.1&q=80&w=1080" alt="Homemade Pizza">
+        <h3 class="item-title">Homemade Pizza</h3>
+        <p class="item-description">A perfect pizza with fresh dough, homemade sauce, and the best toppings.</p>
+    </div>
+    <div class="recipe-item">
+        <img src="https://images.unsplash.com/photo-1574160707311-07efdbf5b801?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDI0fHxjaG9jb2xhdGV8ZW58MHx8fHwxNjgwMzYwNzM4&ixlib=rb-1.2.1&q=80&w=1080" alt="Chocolate Lava Cake">
+        <h3 class="item-title">Chocolate Lava Cake</h3>
+        <p class="item-description">A decadent dessert with a gooey, molten chocolate center.</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2025 Delicious Dishes Restaurant | All Rights Reserved | Created by Mohamed Ashraf</p>
+</footer>
+
+</body>
+</html>
